@@ -43,6 +43,44 @@ const Skills = () => {
         </h4>
         <br />
         <div className="flex flex-wrap gap-4 justify-center">
+          {/* Adding Soft Skills */}
+
+          {/* Adding Soft Skills */}
+
+          <div className="w-full text-center mt-8">
+            <h3 className="text-xl font-bold">Languages & Frameworks</h3>
+          </div>
+          {skills.skills_content1.map((skill, i) => (
+            <div
+              key={i}
+              data-aos="fade-up"
+              data-aos-delay={i * 400}
+              className="bg-white sm:cursor-pointer 
+               relative group w-full flex items-center
+                gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200 btn bg-dark_primary text-white"
+            >
+              <div>
+                {skill.logo ? (
+                  <img
+                    src={skill.logo}
+                    alt="..."
+                    className="w-10 group-hover:scale-125 duration-200"
+                  />
+                ) : (
+                  <span>{skill.name}</span>
+                )}
+              </div>
+              <div>
+                <h6>{skill.name}</h6>
+                <p className="italic">{skill.para}</p>
+              </div>
+            </div>
+          ))}
+
+          <div className="w-full text-center mt-8">
+            <h3 className="text-xl font-bold">Development Tools</h3>
+          </div>
+
           {skills.skills_content.map((skill, i) => (
             <div
               key={i}
@@ -69,7 +107,37 @@ const Skills = () => {
               </div>
             </div>
           ))}
-          {/* Adding Soft Skills */}
+
+          <div className="w-full text-center mt-8">
+            <h3 className="text-xl font-bold">Design Tools</h3>
+          </div>
+          {skills.skills_content2.map((skill, i) => (
+            <div
+              key={i}
+              data-aos="fade-up"
+              data-aos-delay={i * 400}
+              className="bg-white sm:cursor-pointer 
+               relative group w-full flex items-center
+                gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200 btn bg-dark_primary text-white"
+            >
+              <div>
+                {skill.logo ? (
+                  <img
+                    src={skill.logo}
+                    alt="..."
+                    className="w-10 group-hover:scale-125 duration-200"
+                  />
+                ) : (
+                  <span>{skill.name}</span>
+                )}
+              </div>
+              <div>
+                <h6>{skill.name}</h6>
+                <p className="italic">{skill.para}</p>
+              </div>
+            </div>
+          ))}
+
           <div className="w-full text-center mt-8">
             <h3 className="text-xl font-bold">Soft Skills</h3>
           </div>
@@ -80,13 +148,11 @@ const Skills = () => {
             data-aos="fade-up"
             data-aos-delay={skills.skills_content.length * 400}
           >
-            
             <div>
               <h6>Communication</h6>
-             
             </div>
           </div>
-          
+
           <div
             className="bg-white sm:cursor-pointer 
                relative group w-full flex items-center
@@ -94,10 +160,8 @@ const Skills = () => {
             data-aos="fade-up"
             data-aos-delay={skills.skills_content.length * 400 + 800}
           >
-           
             <div>
               <h6>Problem Solving</h6>
-             
             </div>
           </div>
           <div
@@ -107,14 +171,22 @@ const Skills = () => {
             data-aos="fade-up"
             data-aos-delay={skills.skills_content.length * 400 + 1200}
           >
-            
             <div>
               <h6>Decision Making</h6>
-             
             </div>
           </div>
-         
-          
+          <div
+            className="bg-white sm:cursor-pointer 
+               relative group w-full flex items-center
+                gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200 btn bg-dark_primary text-white"
+            data-aos="fade-up"
+            data-aos-delay={skills.skills_content.length * 400 + 1200}
+          >
+            <div>
+              <h6>Teamwork</h6>
+            </div>
+          </div>
+
           {/* End of Soft Skills */}
         </div>
       </div>

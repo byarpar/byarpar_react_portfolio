@@ -5,7 +5,7 @@ const Hero = () => {
   const { hero } = content;
 
   return (
-    <section id="home" className="overflow-hidden">
+    <section id="home" className="overflow-hidden ">
       <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
         <div
           data-aos="slide-left"
@@ -25,8 +25,8 @@ const Hero = () => {
           <h2>{hero.title}</h2>
           <br />
           <div className="flex justify-end  ">
-            <button className="btn button">{hero.btnText}</button>  
-            
+            <button className="btn button">{hero.btnText}</button>
+
             {/* Download CV button */}
             <a
               href="https://drive.google.com/file/d/12RS14PJkDoL07vmJ0CKyNjp-CH7idU6L/view?usp=sharing"

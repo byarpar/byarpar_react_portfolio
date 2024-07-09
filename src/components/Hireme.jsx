@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 import { content } from "../Content";
-import { FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa';
-import { MdEmail, MdPhone } from 'react-icons/md';
-import './Hireme.css'; // Import your CSS file for styles
+import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { MdEmail, MdPhone } from "react-icons/md";
+import "./Hireme.css"; // Import your CSS file for styles
 
 const Hireme = () => {
   const { Hireme } = content;
 
   return (
-    <section className="bg-bg_light_primary" id="about"> 
+    <section className="bg-bg_light_primary" id="about">
       <div className="md:container px-5 pt-14">
         <h2 className="title" data-aos="fade-down">
           {Hireme.title}
@@ -32,12 +32,15 @@ const Hireme = () => {
           />
           <div
             data-aos="fade-left"
-            className="border-animation border-2 border-blue_primary max-w-sm p-1 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[22rem] "
+            className="border-animation border-2 border-blue_primary max-w-sm p-1 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[20rem] "
           >
             <p className="leading-7">{Hireme.para}</p>
             <br />
             {/* Anchor tag for the link */}
-            <a href="https://youtu.be/W329e_ZqiAU?si=6dmxBx_V6OswepJK" className="btn bg-dark_primary text-white button">
+            <a
+              href="https://youtu.be/W329e_ZqiAU?si=6dmxBx_V6OswepJK"
+              className="btn bg-dark_primary text-white button"
+            >
               {Hireme.btnText}
             </a>
             <div className="mt-4 flex gap-4">
